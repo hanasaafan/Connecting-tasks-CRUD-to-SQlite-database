@@ -54,9 +54,6 @@ SELECT * FROM tasks WHERE done = 1;
 ```
 Before marking anything done, this returned zero rows — confirming none of my seeded tasks start as completed. After running `UPDATE tasks SET done = 1;` in DB Browser and saving, calling `GET /tasks` from the API immediately reflected every task as done, with no server restart required.
 
-Screenshot of that session below:
-
-![DB Browser Execute SQL tab showing a query and its result](screenshot.png)
 
 ## Status codes
 
